@@ -1,11 +1,11 @@
 \documentclass[aps,prd,onecolumn,nofootinbib,superscriptaddress]{revtex4-2}
 
-% Налаштування шрифтів та кодування
+% Font and encoding settings
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[english,ukrainian]{babel} % Українська — основна
 
-% Математичні пакети
+% Mathematical packages
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{graphicx}
 \usepackage{tikz}
@@ -13,22 +13,42 @@
 \usepackage{csquotes}
 \usepackage{enumitem}
 
-% hyperref рекомендується завантажувати останнім
+% hyperref is recommended to be loaded last
 \usepackage[unicode]{hyperref}
+
+% ----------------------------------------------------------------
+% Metadata and reusable commands
+% ----------------------------------------------------------------
+\newcommand{\papertitleuk}{Поле відмінностей та емерджентні інваріанти: концептуальна нотатка про суб’єкт}
+\newcommand{\papertitleen}{The Difference Field and Emergent Invariants: A Conceptual Note on the Subject}
+\newcommand{\paperauthor}{Віталій Дурнєв}
+\newcommand{\paperauthorlatin}{Vitalii Durniev}
+
+\hypersetup{
+    pdftitle={\papertitleuk},
+    pdfauthor={\paperauthor},
+    pdfsubject={Концептуальна рамка виникнення простору, часу, інформації, інваріантів і суб’єкта з поля відмінностей},
+    pdfkeywords={поле відмінностей, інваріанти, згортання, суб’єкт, суб’єктність, простір, час, інформація, кібернетика, філософія свідомості},
+    pdfcreator={LaTeX with hyperref}
+}
 
 \begin{document}
 
 % У REVTeX 4.2 дані про статтю описуються після \begin{document}
+% ----------------------------------------------------------------
+% Article metadata
+% ----------------------------------------------------------------
 \title{%
-Поле відмінностей та емерджентні інваріанти: концептуальна нотатка про суб’єкт\\
-{\large\itshape The Difference Field and Emergent Invariants: A Conceptual Note on the Subject}
+\papertitleuk\\[0.5em]
+\large\itshape \papertitleen
 }
-\thanks{Ця робота поширюється на умовах ліцензії CC BY-NC-ND 4.0. Комерційне використання та поширення змінених версій без дозволу автора заборонено.}
-\author{Віталій Дурнєв (Vitalii Durniev)}
-% Виправлено афіліацію: прибрано зайву дужку та змішаний текст
-\affiliation{Незалежний дослідник, Київ, Україна (Independent Researcher, Kyiv, Ukraine} 
 
-\date{17 квітня 2026 року}
+\thanks{Ця робота поширюється на умовах ліцензії CC BY-NC-ND 4.0. Комерційне використання та поширення змінених версій без письмового дозволу автора заборонено.}
+
+\author{\paperauthor}
+\affiliation{Незалежний дослідник, Київ, Україна}
+
+\date{17 квітня 2026}
 
 \begin{abstract}
 У статті пропонується концептуальна рамка, в якій світ, доступний суб’єкту (S), не ототожнюється з повнотою реальності, а розглядається як система інваріантних структур ($\mathcal{I}$), доступних для сприйняття та узгодження. Вихідною точкою слугує граничний уявний експеримент, у якому суб’єкт (S), поміщений у майже однорідне середовище, фізично насичене даними, але позбавлене доступних зовнішніх опор для стабільного розрізнення. На цій основі вводиться поняття поля відмінностей (D) як дооб’єктної основи, що не збігається ані з готовим світом об’єктів, ані з інформацією для конкретного суб’єкта (S).
